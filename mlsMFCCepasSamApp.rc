@@ -1,0 +1,257 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\mlsMFCCepasSamApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\mlsMFCCepasSamApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About mlsMFCCepasSamApp"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Cepas Reader Version 1.0.2",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_MLSMFCCEPASSAMAPP_DIALOG DIALOGEX 0, 0, 605, 367
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Cepas Reader"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_CONTACT,19,17,298,40,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CONTACTLESS,17,55,297,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Contact reader",IDC_STATIC,9,7,324,34
+    GROUPBOX        "Contactless reader",IDC_STATIC,7,42,327,37
+    GROUPBOX        "Read Purse Record",IDC_STATIC,336,7,262,344
+    LTEXT           "CEPAS vesion :",IDC_STATIC,345,18,50,8
+    LTEXT           "Purse status :",IDC_STATIC,345,32,46,8
+    LTEXT           "Purse balance :",IDC_STATIC,345,49,50,8
+    LTEXT           "AutoLoad Amount :",IDC_STATIC,345,65,63,8
+    LTEXT           "CAN :",IDC_STATIC,346,78,20,8
+    LTEXT           "CSN :",IDC_STATIC,346,89,19,8
+    LTEXT           "Purse expiry date :",IDC_STATIC,346,104,62,8
+    LTEXT           "Purse creation date :",IDC_STATIC,345,119,68,8
+    LTEXT           "Last credit transaction TRP :",IDC_STATIC,346,135,92,8
+    LTEXT           "Last credit transaction header :",IDC_STATIC,346,150,102,8
+    LTEXT           "No. of records in transaction lofile :",IDC_STATIC,343,166,114,8
+    LTEXT           "Issuer-specific data length :",IDC_STATIC,344,181,90,8
+    LTEXT           "Last transaction TRP :",IDC_STATIC,344,194,72,8
+    LTEXT           "Last transaction record :",IDC_STATIC,344,211,80,8
+    LTEXT           "Issuer-specific data :",IDC_STATIC,346,300,68,8
+    LTEXT           "Last transaction debit options byte :",IDC_STATIC,346,332,117,8
+    EDITTEXT        IDC_EDIT2,463,14,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,463,29,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,463,44,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,463,59,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,464,133,130,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7,463,89,130,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT8,463,74,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9,464,118,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10,463,104,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11,464,148,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT12,463,164,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT13,463,178,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT14,463,192,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT15,466,329,58,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT16,465,297,129,31,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT19,463,207,129,22,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT17,533,14,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT18,533,29,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT20,533,44,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT21,533,59,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT22,534,104,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT23,534,118,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT24,534,163,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT25,482,228,110,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT26,481,243,111,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT27,481,258,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Transaction type :",IDC_STATIC,403,231,60,8
+    LTEXT           "Transaction Amount :",IDC_STATIC,404,243,70,8
+    LTEXT           "Transaction Da.Time :",IDC_STATIC,403,257,71,8
+    EDITTEXT        IDC_EDIT28,534,178,59,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT29,538,329,57,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT30,482,272,111,25,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Transaction Usr.Data:",IDC_STATIC,403,273,72,8
+    EDITTEXT        IDC_EDIT1,49,306,77,14,ES_AUTOHSCROLL
+    GROUPBOX        "Debit",IDC_STATIC,7,296,323,53
+    PUSHBUTTON      "Debit",IDC_BUTTON3,277,327,50,18
+    EDITTEXT        IDC_EDIT35,210,307,111,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Value:",IDC_STATIC,22,308,21,8
+    LTEXT           "Purse Balance :",IDC_STATIC,155,309,50,8
+    LTEXT           "Status :",IDC_STATIC,22,332,26,8
+    EDITTEXT        IDC_EDIT36,50,327,218,18,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LSTTRANLOG,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,80,327,215,WS_EX_DLGMODALFRAME
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,0
+ PRODUCTVERSION 1,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Molisys"
+            VALUE "FileDescription", "Cepas Reader"
+            VALUE "FileVersion", "1.0.2"
+            VALUE "InternalName", "mlsMFCCepasSamApp.exe"
+            VALUE "LegalCopyright", "(C) Copyright 2009 Molisys Solutions Co., Ltd. , All rights reserved"
+            VALUE "OriginalFilename", "mlsMFCCepasSamApp.exe"
+            VALUE "ProductName", "Cepas Reader"
+            VALUE "ProductVersion", "1.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MLSMFCCEPASSAMAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 598
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About mlsMFCCepasSamApp..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\mlsMFCCepasSamApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
